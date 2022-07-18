@@ -1,0 +1,407 @@
+@font-face {
+    font-family: "Pragmatica";
+    src: url("./fonts/PragmaticaExtended-Book.woff2") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container-mobile {
+    max-width: 1200px;
+    padding-left: 65px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 480px) {
+    .container-mobile {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-mobile {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-mobile {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .section-mobile-header-button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .section-mobile-header-button-svg {
+        background-color: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-mobile-header {
+        display: none;
+    }
+
+    .section-mobile-header-button {
+        display: none;
+    }
+
+    .section-mobile-header-button-svg {
+        display: none;
+    }
+}
+
+.section-info-title {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+.section-info-text {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #000000;
+    padding-bottom: 18px;
+}
+
+.section-info-buttons-group {
+    padding-top: 22px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-info-open-button {
+    width: 240px;
+    height: 48px;
+    border: none;
+    border-radius: 27px;
+    background-color: #68D845;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-info-open-button_icon {
+    margin-right: 15px;
+    fill: #FFFFFF;
+}
+
+.section-info-open-button_text {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.section-info-download-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-info-download-button_icon {
+    margin-right: 14px;
+    fill: #000000;
+}
+
+.section-info-download-button_text {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+}
+
+.section-compatibility-check {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgba(241, 242, 242, 0.5);
+    border-radius: 54px;
+}
+
+.section-compatibility-check-title {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.status-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+/* .no-conflicts {
+    position: absolute;
+    left: 97px;
+    top: 158px;
+} */
+
+.status-text {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+}
+
+.status-icon-wrap {
+    display: flex;
+    margin-right: 13px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.normal {
+    background-color: #68D845;
+}
+
+.del {
+    display: none;
+}
+
+.products-list {
+    display: flex;
+    position: relative;
+    padding-inline-start: 0;
+    list-style: none;
+    width: 320px;
+    overflow: hidden;
+    margin-left: 40px;
+}
+
+.products-list-item,
+.add-product-button {
+    display: block;
+    position: relative;
+    width: 170px;
+    height: 280px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    -webkit-box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
+    box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
+}
+
+.products-list-item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.products-list-item h3 {
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    margin: 0;
+}
+
+.products-list-item p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 120%;
+}
+
+.products-list-item-icon-wrap {
+    display: flex;
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    background-color: #D1D3D4;
+    align-items: center;
+    justify-content: center;
+}
+
+.producs-list-item-text-block {
+    width: 133px;
+    left: 20px;
+    top: 177px;
+}
+
+.products-list-item {
+    position: relative;
+}
+
+.border:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 65px;
+    left: 112px;
+    width: 163px;
+    height: 30px;
+    border-top: 1px solid #7AC943;
+    border-left: 1px solid #7AC943;
+    border-right: 1px solid #7AC943;
+    border-radius: 5px;
+}
+
+.products-list-item:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #7AC943;
+    background-color: #7AC943;
+    border-radius: 50%;
+}
+
+.table {
+    width: 387px;
+    height: 572px;
+    overflow: hidden;
+}
+
+th {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+td {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.table-title {
+    margin-top: 73px;
+}
+
+.column-title,
+.row-title {
+    display: block;
+
+    width: 75px;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.column-title {
+    margin: auto;
+}
+
+.comparison-table {
+    margin-top: 45px;
+}
+
+.comparison-table td:not(:first-child) {
+    position: relative;
+    width: 200px;
+    height: 110px;
+    border: 1px solid #D1D3D4;
+}
+
+.comparison-table td:first-child {
+    width: 200px;
+    border-top: 1px dashed #D1D3D4;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.comparison-table th {
+    height: 105px;
+}
+
+.comparison-table th:not(:first-child) {
+    border-left: 1px dashed #D1D3D4;
+
+}
+
+.comparison-table span:not(:first-child) {
+    /* position: absolute; */
+    bottom: 16px;
+    left: 17.5%;
+    width: 130px;
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 120%;
+    text-align: center;
+    color: #939598;
+}
+
+.comparison-table .status-icon-wrap {
+    margin: auto;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
