@@ -10579,6 +10579,12 @@ a.loyalty-program__button:hover{
     overflow-y: scroll;
 }
 
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .modal{
     display: block;
     width: 1000px;
@@ -10749,9 +10755,9 @@ a.loyalty-program__button:hover{
 
 .modal-products-list{
     padding-inline-start: 0;
-    /* margin-left: 18%; */
-    column-count: 2;
     column-width: 421px;
+    column-count: 2;
+
 }
 
 .modal-products-list-wrap::-webkit-scrollbar{
