@@ -7,8 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="./app.css">
 </head>
-<body >
-    <section class="section-info">
+<body>
+    <header class="section-mobile-header container-mobile">
+        <a  href="">
+            <svg width="240px" height="40px">
+                <use href="./img/header/header.svg#1"></use>
+            </svg>
+        </a>
+        <button class="section-mobile-header-button">
+            <svg width="40px" height="40px" class="section-mobile-header-button-svg">
+                <use href="./img/header/menu.svg#2"></use>
+            </svg>
+        </button>
+    </header>
+    <section class="section-info container-mobile">
         <div class="section-info-text-group">
             <h2 class="section-info-title">Не все вещества можно<br>использовать совместно</h2>
             <p class="section-info-text">
@@ -47,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="section-compatibility-check">
+    <section class="section-compatibility-check container-mobile del">
         <h2>Проверка совместимости</h2>
         <div class="add-product-wrap">
             <button class="add-product-button">
@@ -60,9 +72,9 @@
                 чтобы проверить совместимость действующих веществ</p>
         </div>
     </section>
-    <section class="section-compatibility-check">
-        <h2>Проверка совместимости</h2>
-        <div class="status-wrap no-conflicts">
+    <section class="section-compatibility-check container-mobile">
+        <h2 class="section-compatibility-check-title">Проверка совместимости</h2>
+        <div class="status-wrap no-conflicts border">
             <div class="status-icon-wrap normal">
                 <img src="./img/cheked.png" alt="">
             </div>
@@ -70,7 +82,9 @@
         </div>
         <ul class="products-list">
             <li class="products-list-item">
+                <div class="products-list-item-img">
                 <img src="./img/azelaic.png" alt="">
+                </div>
                 <div class="producs-list-item-text-block">
                     <h3>AZELAIC
                         ACIDDERIVATIVE</h3>
@@ -78,7 +92,9 @@
                 </div>
             </li>
             <li class="products-list-item">
+                <div class="products-list-item-img">
                 <img src="./img/vitami-c-15.png" alt="">
+                </div>
                 <div class="producs-list-item-text-block">
                     <h3>VITAMIN C 15%
                     + ROSMARINUS
@@ -90,14 +106,18 @@
 
             </li>
             <li class="products-list-item">
+                <div class="products-list-item-img">
                 <img src="./img/hyaluronic.png" alt="">
+                </div>
                 <div class="producs-list-item-text-block">
                     <h3>3D HYALURONIC ACID</h3>
                     <p>Увлажняющий крем для лицас низкомолекулярной гиалуроновой кислотой</p>
                 </div>
             </li>
             <li class="products-list-item">
+                <div class="products-list-item-img">
                 <img src="./img/vitamin-c.png" alt="">
+                </div>
                 <div class="producs-list-item-text-block">
                     <h3>VITAMIN C 15%
                         + ROSMARINUS
@@ -119,7 +139,7 @@
                 продукты</p>
             </li>
         </ul>
-        <ul class="allerts-list">
+        <ul class="allerts-list del">
             <li class="allerts-list-item">
                 <div class="status-wrap">
                     <div class="status-icon-wrap allert">
@@ -138,6 +158,7 @@
                     </div>
             </li>
         </ul>
+        <div class="table">
         <h3 class="table-title">Действующие вещества выбранных продуктов</h3>
         <table class="comparison-table">
             <tr>
@@ -280,6 +301,7 @@
                 </td>
             </tr>
         </table>
+        </div>
     </section>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
