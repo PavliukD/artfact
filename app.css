@@ -10820,6 +10820,10 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
+.compare{
+    color: #99FD79;
+}
+
 .modal-choosed-products{
     margin-left: 48px;
 }
