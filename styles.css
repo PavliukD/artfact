@@ -234,6 +234,11 @@ p {
     margin-left: 40px;
 }
 
+.products-list-item-img {
+    display: flex;
+    justify-content: center;
+}
+
 .products-list-item,
 .add-product-button {
     display: block;
