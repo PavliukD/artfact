@@ -10590,14 +10590,14 @@ a.loyalty-program__button:hover{
     top: 206px;
     left: 50%;
     transform: translate(-50%, 0);
-    overflow: auto;
+    overflow: visible;
 }
 
 .modal-header{
     display: flex;
     align-items: center;
     padding-left: 49px;
-    padding-top: 51px;
+    padding-top: 60px;
 }
 
 .modal-header h2{
@@ -10675,7 +10675,6 @@ a.loyalty-program__button:hover{
 }
 
 .filter-buttons-list{
-    outline: 1px solid tomato;
     height: 20px;
     list-style: none;
     display: flex;
@@ -10693,8 +10692,8 @@ a.loyalty-program__button:hover{
     border: none;
     background-color: transparent;
     position: absolute;
-    top: 50px;
-    right: 47px;
+    top: 40px;
+    right: 40px;
 }
 
 .modal-close-button:focus{
@@ -10733,12 +10732,20 @@ a.loyalty-program__button:hover{
     margin-top: 39px;
 }
 
+.modal-roducts-group{
+    display: block;
+}
+
 .modal-products-list{
     padding-inline-start: 0;
     margin-top: 35px;
-    height: 548px;
+    margin-bottom: 35px;
+    height: 573px;
     width: 99%;
+    column-count: 2;
+    column-width: 421px;
     overflow-y: scroll;
+    overflow: visible;
 }
 
 .modal-products-list::-webkit-scrollbar{
@@ -10758,8 +10765,31 @@ a.loyalty-program__button:hover{
 }
 
 .modal-products-list-button{
+    position: relative;
     border: none;
     background-color: transparent;
+    padding-left: 13px;
+    padding-right: 10px;
+}
+
+.modal-products-list-button:hover{
+    border-radius: 15px;
+    background-color: #99FD79;
+}
+
+.exsample-image{
+    display: none;
+    visibility: hidden;
+}
+
+.modal-products-list-button:hover .exsample-image{
+    display: block;
+    visibility: visible;
+    z-index: 999;
+    position: absolute;
+    top: -80%;
+    left: 0;
+    transform: translateX(-100%);
 }
 
 .modal-products-list-button:focus{
@@ -10777,9 +10807,53 @@ a.loyalty-program__button:hover{
 
 .modal-poducts-list-name{
     font-family: 'Pragmatica';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 200%;
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+    color: #FFFFFF;
+}
+
+.modal-choosed-products{
+    margin-left: 48px;
+}
+
+.choosed-products-list{
+    list-style: none;
+    padding-inline-start: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choosed-product-item{
+    display: flex;
+    padding-left: 14px;
+    padding-right: 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.choosed-product-item:not(:first-child){
+    margin-left: 11px;
+}
+
+.choosed-product-text{
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+}
+
+.choosed-product-button{
+    padding: 0;
+    margin-left: 8px;
+    border: none;
+    background-color: transparent;
+}
+
+.choosed-product-button:focus{
+    outline: none;
 }
