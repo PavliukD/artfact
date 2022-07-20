@@ -10665,7 +10665,7 @@ a.loyalty-program__button:hover{
 
 }
 
-.comparison-table span:not(:first-child){
+.comparison-table .information:not(:first-child){
     position: absolute;
     bottom: 16px;
     left: 17.5%;
@@ -10690,13 +10690,22 @@ a.loyalty-program__button:hover{
 .column-title,
 .row-title{
     display: block;
-
-    width: 75px;
+    position: relative;
+    width: 90px;
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
+}
+
+.column-title .inner-text,
+.row-title .inner-text{
+    font-family: 'Pragmatica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
 }
 
 .column-title{
