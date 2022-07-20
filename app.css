@@ -10386,8 +10386,8 @@ a.loyalty-program__button:hover{
     position: relative
 }
 
-.top-connection-line-top_small,
-.top-connection-line-top_big{
+.top-connection-line_small,
+.top-connection-line_big{
     display: block;
     position: absolute;
     z-index: 999;
@@ -10400,34 +10400,72 @@ a.loyalty-program__button:hover{
 
 }
 
-.top-connection-line-top_small{
+.bottom-connection-line_small,
+.bottom-connection-line_big{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 0 0 8px 8px;
+    transform: translateY(100%);
+    bottom: 0;
+}
+
+.bottom-connection-line_small{
     height: 30px;
-    left: 85px;
 }
 
-.top-connection-line-top_big{
+.bottom-connection-line_big{
+    height: 41px;
+}
+
+.top-connection-line_small{
+    height: 30px;
+    /* left: 85px; */
+}
+
+.top-connection-line_big{
     height: 42px;
-    left: 285px;
+    /* left: 285px; */
 }
 
-.left-top-circle,
-.right-top-circle{
+.left-circle,
+.right-circle{
     display: block;
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: #7AC943;
     position: absolute;
 }
 
-.left-top-circle{
-    left: -5px;
+.left-circle{
+    left: -6px;
+}
+
+.right-circle{
+    right: -5px;
+}
+
+.top{
     bottom: -5px;
 }
 
-.right-top-circle{
-    right: -5px;
-    bottom: -5px;
+.bottom{
+    top: -5px;
+}
+
+.green{
+    background-color: #7AC943;
+}
+
+.yellow{
+    background-color: #E0CE04;
+}
+
+.red{
+    background-color: #CA454B;
 }
 
 .products-list{
@@ -10435,6 +10473,7 @@ a.loyalty-program__button:hover{
     position: relative;
     padding-inline-start: 0;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .add-product-wrap{
@@ -10517,6 +10556,8 @@ a.loyalty-program__button:hover{
 
 .products-list-item{
     padding-top: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .products-list-item-image{
@@ -10559,6 +10600,24 @@ a.loyalty-program__button:hover{
     background-color: #D1D3D4;
     align-items: center;
     justify-content: center;
+}
+
+.product-list-item-buttons{
+    position: absolute;
+    list-style: none;
+    padding-inline-start: 0;
+    top: 10px;
+    right: -30px;
+}
+
+.products-list-item:hover .product-list-item-buttons{
+    top: 10px;
+    right: 11px;
+}
+
+.product-list-item-button{
+    background-color: transparent;
+    border: none;
 }
 
 .change-products-button:hover .products-list-item-icon-wrap{
