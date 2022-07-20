@@ -10238,6 +10238,17 @@ a.loyalty-program__button:hover{
     color: #000000;
 }
 
+@media (max-width: 767px){
+    .section-info h2,
+    .section-compatibility-check h2{
+        font-family: 'Pragmatica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
 .section-info p{
     width: 530px;
     font-family: 'Pragmatica';
@@ -10245,6 +10256,17 @@ a.loyalty-program__button:hover{
     font-weight: 400;
     font-size: 12px;
     line-height: 130%;
+}
+
+@media (max-width: 767px){
+    .section-info p{
+        width: 100%;
+        font-family: 'Pragmatica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+    }
 }
 
 .section-info{
@@ -10255,17 +10277,44 @@ a.loyalty-program__button:hover{
     margin-top: 85px;
 }
 
+@media (max-width: 767px){
+    .section-info{
+        display: block;
+        width: 324px;
+        margin: auto;
+        margin-top: 70px;
+    }
+}
+
 .section-info-text-group{
     display: block;
     margin-right: 70px;
+}
+
+@media (max-width: 767px){
+    .section-info-text-group{
+        margin-right: 0;
+    }
 }
 
 .section-info-title{
     margin-bottom: 42px;
 }
 
+@media (max-width: 767px){
+    .section-info-title{
+        margin-bottom: 38px;
+    }
+}
+
 .section-info-text{
     margin-bottom: 29px;
+}
+
+@media (max-width: 767px){
+    .section-info-text{
+        margin-bottom: 18px;
+    }
 }
 
 .section-info-text:last-child{
@@ -10280,9 +10329,23 @@ a.loyalty-program__button:hover{
     border-radius: 27px;
 }
 
+@media (max-width: 767px){
+    .section-info-image{
+        display: none;
+    }
+}
+
 .section-info-buttons-group{
     display: flex;
     margin-top: 30px;
+}
+
+@media (max-width: 767px){
+    .section-info-buttons-group{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 37px;
+    }
 }
 
 .section-info-open-button{
@@ -10313,6 +10376,13 @@ a.loyalty-program__button:hover{
     border:none;
 }
 
+@media (max-width: 767px){
+    .section-info-download-button{
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
 .section-info-download-button_icon{
     margin-right: 14px;
     fill: #000000;
@@ -10336,6 +10406,15 @@ a.loyalty-program__button:hover{
     border-radius: 54px;
 }
 
+@media (max-width: 767px){
+    .section-compatibility-check{
+        width: 424px;
+        margin-top: 54px;
+        padding: 60px 28px 49px 36px;
+        overflow: hidden;
+    }
+}
+
 .status-wrap{
     display: flex;
     align-items: center;
@@ -10347,12 +10426,25 @@ a.loyalty-program__button:hover{
     top: 158px;
 }
 
+@media (max-width: 767px){
+    .no-conflicts{
+        left: 28px;
+        top: 166px;
+    }
+}
+
 .status-text{
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
     line-height: 120%;
+}
+
+@media (max-width: 767px){
+    .status-text{
+        width: 140px;
+    }
 }
 
 .status-icon-wrap{
@@ -10379,7 +10471,14 @@ a.loyalty-program__button:hover{
 
 .products-list-wrap {
     display: flex;
-        margin-top: 133px;
+    margin-top: 133px;
+}
+
+@media (max-width: 767px){
+    .products-list-wrap{
+        flex-direction: column;
+        margin-top: 183px;
+    }
 }
 
 .wrap-for-connection-lines{
@@ -10423,12 +10522,20 @@ a.loyalty-program__button:hover{
 
 .top-connection-line_small{
     height: 30px;
-    /* left: 85px; */
+    left: 85px;
+}
+
+@media (max-width: 767px){
+    .top-connection-line_small{
+        transform: rotate(270deg);
+        bottom: 0;
+        left: 100%;
+    }
 }
 
 .top-connection-line_big{
     height: 42px;
-    /* left: 285px; */
+    left: 285px;
 }
 
 .left-circle,
@@ -10476,9 +10583,22 @@ a.loyalty-program__button:hover{
     margin-bottom: 0;
 }
 
+@media (max-width: 767px){
+    .products-list{
+        flex-direction: column;
+    }
+}
+
 .add-product-wrap{
     display: flex;
     margin-top: 67px;
+}
+
+@media (max-width: 767px){
+    .add-product-wrap{
+        flex-direction: column;
+        margin-top: 40px;
+    }
 }
 
 .products-list-item,
@@ -10494,8 +10614,25 @@ a.loyalty-program__button:hover{
     box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
 }
 
+@media (max-width: 767px){
+    .products-list-item,
+    .add-product-button,
+    .change-products-button{
+        width: 320px;
+        height: 188px;
+        margin: auto;
+    }
+}
+
 .change-products-button{
     margin-left: 30px;
+}
+
+@media (max-width: 767px){
+    .change-products-button{
+        margin: auto;
+        margin-top: 25px;
+    }
 }
 
 .add-product-button,
@@ -10540,6 +10677,12 @@ a.loyalty-program__button:hover{
     height: 139px;
 }
 
+@media (max-width: 767px){
+    .add-product-wrap img{
+        display: none;
+    }
+}
+
 .add-products-text{
     margin-left: 19px;
     margin-top: 80px;
@@ -10550,8 +10693,23 @@ a.loyalty-program__button:hover{
     line-height: 120%;
 }
 
+@media (max-width: 767px){
+    .add-products-text{
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
 .products-list-item:not(:first-child){
     margin-left: 30px;
+}
+
+@media (max-width: 767px){
+    .products-list-item:not(:first-child){
+       margin: auto;
+        margin-top: 25px;
+    }
 }
 
 .products-list-item{
@@ -10560,9 +10718,22 @@ a.loyalty-program__button:hover{
     overflow: hidden;
 }
 
+@media (max-width: 767px){
+    .products-list-item{
+        padding-top: 30px;
+    }
+}
+
 .products-list-item-image{
     width: 60%;
     margin: auto;
+}
+
+@media (max-width: 767px){
+    .products-list-item-image{
+        max-width: 97px;
+        margin-left: 41px;
+    }
 }
 
 .producs-list-item-text-block{
@@ -10570,6 +10741,14 @@ a.loyalty-program__button:hover{
     width: 133px;
     left: 20px;
     top: 177px;
+}
+
+@media (max-width: 767px){
+    .producs-list-item-text-block{
+        top: 50%;
+        left: 152px;
+        transform: translateY(-50%);
+    }
 }
 
 .products-list-item h3{
@@ -10631,12 +10810,36 @@ a.loyalty-program__button:hover{
     list-style: none;
 }
 
+@media (max-width: 767px){
+    .allerts-list{
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        left: 221px;
+    }
+}
+
 .allerts-list-item:first-child{
     margin-right: 45px;
 }
 
+@media (max-width: 767px){
+    .allerts-list-item:first-child{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
 .comparison-table{
     margin-top: 45px;
+}
+
+@media (max-width: 767px){
+    .table-container{
+        width: 90%;
+        overflow: auto;
+
+    }
 }
 
 .comparison-table td:not(:first-child){
@@ -10677,6 +10880,12 @@ a.loyalty-program__button:hover{
     line-height: 120%;
     text-align: center;
     color: #939598;
+}
+
+@media (max-width: 767px){
+    .information{
+        display: none;
+    }
 }
 
 .comparison-table .status-icon-wrap{
@@ -11014,77 +11223,4 @@ a.loyalty-program__button:hover{
 
 .choosed-product-button:focus{
     outline: none;
-}
-
-.container-mobile {
-    max-width: 1200px;
-    padding-left: 65px;
-    padding-right: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 480px) {
-    .container-mobile {
-        max-width: 480px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container-mobile {
-        max-width: 768px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container-mobile {
-        max-width: 1200px;
-    }
-}
-
-@media (max-width: 767px) {
-    .section-mobile-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 80px;
-        padding-bottom: 70px;
-    }
-
-    .section-mobile-header-button {
-        border: none;
-        background-color: transparent;
-        padding: 0;
-        margin-left: 25px;
-    }
-
-    .section-mobile-header-button-svg {
-        background-color: #fff;
-    }
-}
-
-@media (min-width: 768px) {
-    .section-mobile-header {
-        display: none;
-    }
-
-    .section-mobile-header-button {
-        display: none;
-    }
-
-    .section-mobile-header-button-svg {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .section-info-title {
-        font-family: 'Pragmatica';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        color: #000000;
-        padding-bottom: 40px;
-    }
 }
