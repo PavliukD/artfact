@@ -10377,11 +10377,63 @@ a.loyalty-program__button:hover{
     background-color: #FF1D25;
 }
 
+.products-list-wrap {
+    display: flex;
+        margin-top: 133px;
+}
+
+.wrap-for-connection-lines{
+    position: relative
+}
+
+.top-connection-line-top_small,
+.top-connection-line-top_big{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 400px;
+    border-top: 1px solid #7AC943;
+    border-left: 1px solid #7AC943;
+    border-right: 1px solid #7AC943;
+    border-radius: 8px 8px 0 0;
+    transform: translateY(-100%);
+
+}
+
+.top-connection-line-top_small{
+    height: 30px;
+    left: 85px;
+}
+
+.top-connection-line-top_big{
+    height: 42px;
+    left: 285px;
+}
+
+.left-top-circle,
+.right-top-circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #7AC943;
+    position: absolute;
+}
+
+.left-top-circle{
+    left: -5px;
+    bottom: -5px;
+}
+
+.right-top-circle{
+    right: -5px;
+    bottom: -5px;
+}
+
 .products-list{
     display: flex;
     position: relative;
     padding-inline-start: 0;
-    margin-top: 133px;
     list-style: none;
 }
 
@@ -10391,7 +10443,8 @@ a.loyalty-program__button:hover{
 }
 
 .products-list-item,
-.add-product-button{
+.add-product-button,
+.change-products-button{
     display: block;
     position: relative;
     width: 170px;
@@ -10402,11 +10455,17 @@ a.loyalty-program__button:hover{
     box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
 }
 
-.add-product-button{
+.change-products-button{
+    margin-left: 30px;
+}
+
+.add-product-button,
+.change-products-button{
     border: none;
 }
 
-.add-product-button:hover{
+.add-product-button:hover,
+.change-products-button:hover{
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -10423,7 +10482,8 @@ a.loyalty-program__button:hover{
     background-image: url(./img/addButtonIconActive.png)
 }
 
-.add-product-button span {
+.add-product-button span,
+.change-products-button p {
     display: block;
     margin-top: 18px;
     font-family: 'Pragmatica';
@@ -10455,6 +10515,15 @@ a.loyalty-program__button:hover{
     margin-left: 30px;
 }
 
+.products-list-item{
+    padding-top: 20px;
+}
+
+.products-list-item-image{
+    width: 60%;
+    margin: auto;
+}
+
 .producs-list-item-text-block{
     position: absolute;
     width: 133px;
@@ -10483,12 +10552,17 @@ a.loyalty-program__button:hover{
 
 .products-list-item-icon-wrap{
     display: flex;
+    margin: auto;
     width: 68px;
     height: 68px;
     border-radius: 100%;
     background-color: #D1D3D4;
     align-items: center;
     justify-content: center;
+}
+
+.change-products-button:hover .products-list-item-icon-wrap{
+    background-color: #68D845;
 }
 
 .allerts-list{
@@ -10577,6 +10651,12 @@ a.loyalty-program__button:hover{
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal{
@@ -10749,9 +10829,9 @@ a.loyalty-program__button:hover{
 
 .modal-products-list{
     padding-inline-start: 0;
-    /* margin-left: 18%; */
-    column-count: 2;
     column-width: 421px;
+    column-count: 2;
+
 }
 
 .modal-products-list-wrap::-webkit-scrollbar{
@@ -10866,4 +10946,77 @@ a.loyalty-program__button:hover{
 
 .choosed-product-button:focus{
     outline: none;
+}
+
+.container-mobile {
+    max-width: 1200px;
+    padding-left: 65px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 480px) {
+    .container-mobile {
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-mobile {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-mobile {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+
+    .section-mobile-header-button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin-left: 25px;
+    }
+
+    .section-mobile-header-button-svg {
+        background-color: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-mobile-header {
+        display: none;
+    }
+
+    .section-mobile-header-button {
+        display: none;
+    }
+
+    .section-mobile-header-button-svg {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-info-title {
+        font-family: 'Pragmatica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        padding-bottom: 40px;
+    }
 }
