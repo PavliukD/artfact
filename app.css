@@ -10500,7 +10500,7 @@ a.loyalty-program__button:hover{
     overflow: visible;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .products-list-wrap{
         flex-direction: column;
         margin-top: 183px;
@@ -10526,7 +10526,7 @@ a.loyalty-program__button:hover{
     left: 85px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .top-connection-line_small,
     .top-connection-line_big{
         border-right: none;
@@ -10553,7 +10553,7 @@ a.loyalty-program__button:hover{
     bottom: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
     .bottom-connection-line_small,
     .bottom-connection-line_big{
         border-left: none;
@@ -10571,7 +10571,7 @@ a.loyalty-program__button:hover{
     width: 170px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .bottom-connection-line_small{
         width: 15px;
         height: 183px;
@@ -10583,7 +10583,7 @@ a.loyalty-program__button:hover{
     width: 630px;   
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .bottom-connection-line_big{
         width: 27px;
         height: 669px;
@@ -10594,7 +10594,7 @@ a.loyalty-program__button:hover{
     height: 30px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .top-connection-line_small{
         height: 426px;
     }
@@ -10604,7 +10604,7 @@ a.loyalty-program__button:hover{
     height: 42px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .top-connection-line_big{
         width: 18px;
         height: 426px;
@@ -10624,7 +10624,7 @@ a.loyalty-program__button:hover{
     left: -6px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .left-circle{
         left: auto;
         right: -6px;
@@ -10644,7 +10644,7 @@ a.loyalty-program__button:hover{
     top: -5px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .bottom{
         left: -5px;
     }
@@ -10666,7 +10666,7 @@ a.loyalty-program__button:hover{
     left: 85px; 
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .left,
     .right,
     .central{
@@ -10720,7 +10720,7 @@ a.loyalty-program__button:hover{
     overflow: visible;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .products-list{
         flex-direction: column;
     }
@@ -10732,7 +10732,7 @@ a.loyalty-program__button:hover{
     margin-top: 67px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .add-product-wrap{
         flex-direction: column;
         margin-top: 40px;
@@ -10753,7 +10753,7 @@ a.loyalty-program__button:hover{
     box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .products-list-item,
     .add-product-button,
     .change-products-button{
@@ -10767,7 +10767,7 @@ a.loyalty-program__button:hover{
     margin-left: 30px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .change-products-button{
         margin: auto;
         margin-top: 25px;
@@ -10816,15 +10816,7 @@ a.loyalty-program__button:hover{
     height: 139px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
-    .add-product-wrap img{
-        width: 160px;
-        height: 60px;
-        margin-top: 70px;
-    }
-}
-
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .add-product-wrap img{
         display: none;
     }
@@ -10840,7 +10832,7 @@ a.loyalty-program__button:hover{
     line-height: 120%;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .add-products-text{
         margin: auto;
         margin-top: 30px;
@@ -10848,19 +10840,12 @@ a.loyalty-program__button:hover{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
-    .add-products-text{
-        width: 140px;
-        font-size: 10px;
-        line-height: 120%;
-    }
-}
 
 .products-list-item:not(:first-child){
     margin-left: 30px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .products-list-item:not(:first-child){
        margin: auto;
         margin-top: 25px;
@@ -10873,7 +10858,7 @@ a.loyalty-program__button:hover{
     overflow: visible;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .products-list-item{
         padding-top: 30px;
     }
@@ -10884,7 +10869,7 @@ a.loyalty-program__button:hover{
     margin: auto;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .products-list-item-image{
         max-width: 97px;
         margin-left: 41px;
@@ -10898,7 +10883,7 @@ a.loyalty-program__button:hover{
     top: 177px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .producs-list-item-text-block{
         top: 50%;
         left: 152px;
@@ -10974,11 +10959,20 @@ a.loyalty-program__button:hover{
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px){
+    .allerts-list{
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        left: 442px;
+    }
+}
+
 .allerts-list-item:first-child{
     margin-right: 45px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .allerts-list-item:first-child{
         margin-right: 0;
         margin-bottom: 15px;
@@ -11344,11 +11338,11 @@ a.loyalty-program__button:hover{
     column-count: 2;
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
+/* @media (min-width: 768px) and (max-width: 1199px){
     .modal-products-list{
-        column-width: 300px;
+        
     }
-}
+} */
 
 .modal-products-list-wrap::-webkit-scrollbar{
     position: absolute;
