@@ -11041,6 +11041,7 @@ a.loyalty-program__button:hover{
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    z-index: 9999;
 }
 
 .is-hidden {
@@ -11061,6 +11062,13 @@ a.loyalty-program__button:hover{
     left: 50%;
     transform: translate(-50%, 0);
     overflow: visible;
+    z-index: 9999;
+}
+
+@media (max-width: 767px){
+    .modal{
+        width: 450px;
+    }
 }
 
 .modal-header{
@@ -11068,6 +11076,16 @@ a.loyalty-program__button:hover{
     align-items: center;
     padding-left: 49px;
     padding-top: 60px;
+}
+
+@media (max-width: 767px){
+    .modal-header{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+        flex-wrap: wrap;
+        position: relative;
+    }
 }
 
 .modal-header h2{
@@ -11080,15 +11098,32 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
+@media (max-width: 767px){
+    .modal-header h2{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+}
+
 .modal-header p{
     margin-left: 48px;
     margin-bottom: 0;
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 400;
-    font-size: 12.628px;
+    font-size: 12px;
     line-height: 12px;
     color: #FFFFFF;
+}
+
+@media (max-width: 767px){
+    .modal-header p{
+        font-size: 10px;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        transform: translateY(150%);
+    }
 }
 
 .modal-header span {
@@ -11101,6 +11136,13 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
+@media (max-width: 767px){
+    .modal-header span{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+}
+
 .inner-text{
     margin-right: 6px;
 }
@@ -11108,6 +11150,14 @@ a.loyalty-program__button:hover{
 .modal-input-wrap{
     margin-left: 32px;
     position: relative;
+}
+
+@media (max-width: 767px){
+    .modal-input-wrap{
+        margin: 0;
+        position: absolute;
+        margin-top: 80px;
+    }
 }
 
 .modal-input{
@@ -11121,8 +11171,14 @@ a.loyalty-program__button:hover{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 13px;
+    line-height: 16px;
     color: #FFFFFF;
+}
+
+@media (max-width: 767px){
+    .modal-input{
+        height: 30px;
+    }
 }
 
 .modal-input:focus{
@@ -11133,15 +11189,16 @@ a.loyalty-program__button:hover{
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 13px;
+    font-size: 12px;
+    line-height: 14px;
     color: #FFFFFF;
 }
 
 .modal-input-icon{
     position: absolute;
     left: 17px;
-    top: 13px;
+    top: 0;
+    transform: translateY(50%);
 }
 
 .filter-buttons-list{
@@ -11152,7 +11209,14 @@ a.loyalty-program__button:hover{
     margin-block-start: 0;
     margin-block-end: 0;
     margin-left: 26px;
+}
 
+@media (max-width: 767px){
+    .filter-buttons-list{
+        position: absolute;
+        right: 20px;
+        margin-top: 80px;
+    }
 }
 
 .modal-close-button{
@@ -11164,6 +11228,13 @@ a.loyalty-program__button:hover{
     position: absolute;
     top: 40px;
     right: 40px;
+}
+
+@media (max-width: 767px){
+    .modal-close-button{
+        top: 20px;
+        right: 20px;
+    }
 }
 
 .modal-close-button:focus{
@@ -11210,6 +11281,8 @@ a.loyalty-program__button:hover{
     display: block;
     width: 120%;
     height: 573px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding-top: 35px;
     padding-bottom: 35px;
     overflow-y: scroll;
@@ -11281,6 +11354,13 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
+@media (max-width: 767px){
+    .modal-product-cathegory-name{
+        font-size: 22px;
+        line-height: 1.2;
+    }
+}
+
 .modal-poducts-list-name{
     font-family: 'Pragmatica';
     font-style: normal;
@@ -11288,6 +11368,13 @@ a.loyalty-program__button:hover{
     font-size: 14px;
     line-height: 200%;
     color: #FFFFFF;
+}
+
+@media (max-width: 767px){
+    .modal-poducts-list-name{
+        font-size: 12px;
+        line-height: 1.2;
+    }
 }
 
 .compare{
@@ -11306,6 +11393,14 @@ a.loyalty-program__button:hover{
     flex-wrap: wrap;
 }
 
+@media (max-width:767px){
+    .choosed-products-list{
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .choosed-product-item{
     display: flex;
     padding-left: 14px;
@@ -11316,6 +11411,13 @@ a.loyalty-program__button:hover{
 
 .choosed-product-item:not(:first-child){
     margin-left: 11px;
+}
+
+@media (max-width: 767px){
+    .choosed-product-item:not(:first-child){
+        margin-left: 0;
+        margin-top: 5px;
+    }
 }
 
 .choosed-product-text{
