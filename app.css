@@ -10472,6 +10472,7 @@ a.loyalty-program__button:hover{
 .products-list-wrap {
     display: flex;
     margin-top: 133px;
+    overflow: visible;
 }
 
 @media (max-width: 767px){
@@ -10496,7 +10497,22 @@ a.loyalty-program__button:hover{
     border-right: 1px solid #7AC943;
     border-radius: 8px 8px 0 0;
     transform: translateY(-100%);
+    top: 0;
+    left: 85px;
+}
 
+@media (max-width: 767px){
+    .top-connection-line_small,
+    .top-connection-line_big{
+        border-right: none;
+        border-bottom: 1px solid #7AC943;
+        border-radius: 8px 0 0 8px;
+        top: 94px;
+        left: 0;
+        width: 30px;
+        transform: translateY(0);
+        transform: translateX(-100%);
+    }
 }
 
 .bottom-connection-line_small,
@@ -10512,30 +10528,62 @@ a.loyalty-program__button:hover{
     bottom: 0;
 }
 
+@media (max-width: 767px) {
+    .bottom-connection-line_small,
+    .bottom-connection-line_big{
+        border-left: none;
+        border-top: 1px solid;
+        border-radius: 0 8px 8px 0;
+        transform: translateY(0);
+        transform: translateX(100%);
+        bottom: auto;
+    }
+}
+
+
 .bottom-connection-line_small{
     height: 30px;
+    width: 170px;
+}
+
+@media (max-width: 767px){
+    .bottom-connection-line_small{
+        width: 15px;
+        height: 183px;
+    }
 }
 
 .bottom-connection-line_big{
     height: 41px;
+    width: 630px;   
+}
+
+@media (max-width: 767px){
+    .bottom-connection-line_big{
+        width: 27px;
+        height: 669px;
+    }
 }
 
 .top-connection-line_small{
     height: 30px;
-    left: 85px;
 }
 
 @media (max-width: 767px){
     .top-connection-line_small{
-        transform: rotate(270deg);
-        bottom: 0;
-        left: 100%;
+        height: 426px;
     }
 }
 
 .top-connection-line_big{
     height: 42px;
-    left: 285px;
+}
+
+@media (max-width: 767px){
+    .top-connection-line_big{
+        width: 18px;
+        height: 426px;
+    }
 }
 
 .left-circle,
@@ -10551,6 +10599,14 @@ a.loyalty-program__button:hover{
     left: -6px;
 }
 
+@media (max-width: 767px){
+    .left-circle{
+        left: auto;
+        right: -6px;
+        top: -6px;
+    }
+}
+
 .right-circle{
     right: -5px;
 }
@@ -10563,16 +10619,71 @@ a.loyalty-program__button:hover{
     top: -5px;
 }
 
+@media (max-width: 767px){
+    .bottom{
+        left: -5px;
+    }
+    .right-circle{
+        top: auto;
+        bottom: -5px;
+    }
+}
+
+.left{
+    left: 70px;
+}
+
+.right{
+    left: 100px;
+}
+
+.central{
+    left: 85px; 
+}
+
+@media (max-width: 767px){
+    .left,
+    .right,
+    .central{
+        left: auto;
+        right: 0;
+    }
+
+    .left{
+        top: 79px;
+    }
+
+    .right{
+        top: 109px
+    }
+
+    .central{
+        top: 94px;
+    }
+}
+
 .green{
     background-color: #7AC943;
+}
+
+.border-green{
+    border-color: #7AC943;
 }
 
 .yellow{
     background-color: #E0CE04;
 }
 
+.border-yellow{
+    border-color: #E0CE04;
+}
+
 .red{
     background-color: #CA454B;
+}
+
+.border-red{
+    border-color: #CA454B;
 }
 
 .products-list{
@@ -10581,6 +10692,7 @@ a.loyalty-program__button:hover{
     padding-inline-start: 0;
     list-style: none;
     margin-bottom: 0;
+    overflow: visible;
 }
 
 @media (max-width: 767px){
@@ -10610,6 +10722,7 @@ a.loyalty-program__button:hover{
     height: 280px;
     background-color: #FFFFFF;
     border-radius: 14px;
+    overflow: visible;
     -webkit-box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
     box-shadow: 8px 14px 14px 1px rgba(0, 0, 0, 0.12);
 }
@@ -10715,7 +10828,7 @@ a.loyalty-program__button:hover{
 .products-list-item{
     padding-top: 20px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 @media (max-width: 767px){
@@ -10782,14 +10895,14 @@ a.loyalty-program__button:hover{
 }
 
 .product-list-item-buttons{
+    display: none;
     position: absolute;
     list-style: none;
     padding-inline-start: 0;
-    top: 10px;
-    right: -30px;
 }
 
 .products-list-item:hover .product-list-item-buttons{
+    display: block;
     top: 10px;
     right: 11px;
 }
