@@ -10286,6 +10286,18 @@ a.loyalty-program__button:hover{
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px){
+    .section-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 750px;
+        margin: auto;
+        margin-top: 70px;
+
+    }
+}
+
 .section-info-text-group{
     display: block;
     margin-right: 70px;
@@ -10294,6 +10306,13 @@ a.loyalty-program__button:hover{
 @media (max-width: 767px){
     .section-info-text-group{
         margin-right: 0;
+    }
+}
+
+@media (max-width: 1199px){
+    .section-info-text-group{
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
@@ -10412,6 +10431,12 @@ a.loyalty-program__button:hover{
         margin-top: 54px;
         padding: 60px 28px 49px 36px;
         overflow: hidden;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .section-compatibility-check{
+        width: 750px;
     }
 }
 
@@ -10701,6 +10726,7 @@ a.loyalty-program__button:hover{
     }
 }
 
+
 .add-product-wrap{
     display: flex;
     margin-top: 67px;
@@ -10790,6 +10816,14 @@ a.loyalty-program__button:hover{
     height: 139px;
 }
 
+@media (min-width: 768px) and (max-width: 1199px){
+    .add-product-wrap img{
+        width: 160px;
+        height: 60px;
+        margin-top: 70px;
+    }
+}
+
 @media (max-width: 767px){
     .add-product-wrap img{
         display: none;
@@ -10811,6 +10845,14 @@ a.loyalty-program__button:hover{
         margin: auto;
         margin-top: 30px;
         text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .add-products-text{
+        width: 140px;
+        font-size: 10px;
+        line-height: 120%;
     }
 }
 
@@ -10995,7 +11037,7 @@ a.loyalty-program__button:hover{
     color: #939598;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .information{
         display: none;
     }
@@ -11071,6 +11113,12 @@ a.loyalty-program__button:hover{
     }
 }
 
+@media (min-width: 768px) and (max-width: 1199px){
+    .modal{
+        width: 750px;
+    }
+}
+
 .modal-header{
     display: flex;
     align-items: center;
@@ -11078,7 +11126,7 @@ a.loyalty-program__button:hover{
     padding-top: 60px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-header{
         padding-left: 20px;
         padding-right: 20px;
@@ -11098,7 +11146,7 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-header h2{
         font-size: 22px;
         line-height: 1.2;
@@ -11116,7 +11164,7 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-header p{
         font-size: 10px;
         position: absolute;
@@ -11136,7 +11184,7 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-header span{
         font-size: 22px;
         line-height: 1.2;
@@ -11152,7 +11200,7 @@ a.loyalty-program__button:hover{
     position: relative;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-input-wrap{
         margin: 0;
         position: absolute;
@@ -11175,7 +11223,7 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-input{
         height: 30px;
     }
@@ -11211,7 +11259,7 @@ a.loyalty-program__button:hover{
     margin-left: 26px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .filter-buttons-list{
         position: absolute;
         right: 20px;
@@ -11230,7 +11278,7 @@ a.loyalty-program__button:hover{
     right: 40px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-close-button{
         top: 20px;
         right: 20px;
@@ -11294,7 +11342,12 @@ a.loyalty-program__button:hover{
     padding-inline-start: 0;
     column-width: 421px;
     column-count: 2;
+}
 
+@media (min-width: 768px) and (max-width: 1199px){
+    .modal-products-list{
+        column-width: 300px;
+    }
 }
 
 .modal-products-list-wrap::-webkit-scrollbar{
@@ -11354,7 +11407,7 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-product-cathegory-name{
         font-size: 22px;
         line-height: 1.2;
@@ -11370,10 +11423,11 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .modal-poducts-list-name{
         font-size: 12px;
         line-height: 1.2;
+        white-space: pre;
     }
 }
 
@@ -11393,7 +11447,7 @@ a.loyalty-program__button:hover{
     flex-wrap: wrap;
 }
 
-@media (max-width:767px){
+@media (max-width:1199px){
     .choosed-products-list{
         margin-top: 50px;
         flex-direction: column;
@@ -11413,7 +11467,7 @@ a.loyalty-program__button:hover{
     margin-left: 11px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
     .choosed-product-item:not(:first-child){
         margin-left: 0;
         margin-top: 5px;
