@@ -10354,20 +10354,23 @@ a.loyalty-program__button:hover{
     }
 }
 
-.section-info-buttons-group{
+.section-info-links-group{
     display: flex;
     margin-top: 30px;
 }
 
 @media (max-width: 767px){
-    .section-info-buttons-group{
+    .section-info-links-group{
         flex-direction: column;
         align-items: center;
         margin-top: 37px;
     }
 }
 
-.section-info-open-button{
+.section-info-open-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 240px;
     height: 48px;
     border: none;
@@ -10375,12 +10378,12 @@ a.loyalty-program__button:hover{
     background-color: #68D845;
 }
 
-.section-info-open-button_icon{
+.section-info-open-link_icon{
     margin-right: 15px;
     fill: #FFFFFF;
 }
 
-.section-info-open-button_text{
+.section-info-open-link_text{
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 700;
@@ -10389,25 +10392,33 @@ a.loyalty-program__button:hover{
     color: #FFFFFF;
 }
 
-.section-info-download-button{
+.section-info-download-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 30px;
     background-color: transparent;
     border:none;
 }
 
 @media (max-width: 767px){
-    .section-info-download-button{
+    .section-info-download-link{
         margin: 0;
         margin-top: 30px;
     }
 }
 
-.section-info-download-button_icon{
+.section-info-open-link:hover,
+.section-info-download-link:hover{
+    cursor: pointer;
+}
+
+.section-info-download-link_icon{
     margin-right: 14px;
     fill: #000000;
 }
 
-.section-info-download-button_text{
+.section-info-download-link_text{
     font-family: 'Pragmatica';
     font-style: normal;
     font-weight: 400;
