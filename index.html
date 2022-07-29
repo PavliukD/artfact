@@ -50,7 +50,7 @@
     <section class="section-compatibility-check">
         <h2>Проверка совместимости</h2>
         <div class="add-product-wrap">
-            <button class="add-product-button">
+            <button class="add-product-button" data-modal-open>
                 <div class="add-button-icon">
                 </div>
                 <span>Добавить продукт ART&FACT</span>
@@ -156,7 +156,7 @@
                         </div>
                     </li>
                 </ul>
-            <button class="change-products-button">
+            <button class="change-products-button" data-change-products-btn>
                 <div class="products-list-item-icon-wrap">
                     <svg width="24" height="24">
                         <path
@@ -189,152 +189,152 @@
         </ul>
         <h3 class="table-title">Действующие вещества выбранных продуктов</h3>
         <div class="table-container">
-                    <table class="comparison-table">
-                        <tr>
-                            <th></th>
-                            <th>
-                                <p class="column-title">Niacinamide 2–5 %*</p>
-                            </th>
-                            <th>
-                                <p class="column-title">Niacinamide > 5 %</p>
-                            </th>
-                            <th>
-                                <p class="column-title">Amino Acids + Peptides<br>
-                                    <span class="inner-text">EGF, Matrixyl
-                                        Leuphasyl
-                                        Argireline
-                                        SYN-AKE</span>
-                                </p>
-                            </th>
-                            <th>
-                                <p class="column-title">Benzoyl Peroxide<br>
-                                    <span class="inner-text">2,5–5 %</span>
-                                </p>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="row-title">Niacinamide 2–5 %*</p>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="row-title">Niacinamide > 5 %</p>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap error">
-                                    <img src="./img/group1217.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="row-title">Amino Acids + Peptides<br>
-                                    <span class="inner-text">EGF, Matrixyl
-                                        Leuphasyl
-                                        Argireline
-                                        SYN-AKE</span>
-                                </p>
-                    
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p class="row-title">Benzoyl Peroxide<br>
-                                    <span class="inner-text">2,5–5 %</span>
-                                </p>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                            <td>
-                                <div class="status-icon-wrap normal">
-                                    <img src="./img/cheked.png" alt="">
-                                </div>
-                                <span class="information">Наносить спустя 30 минут
-                                    после любой косметики</span>
-                            </td>
-                        </tr>
-                    </table>
+            <table class="comparison-table">
+                <tr>
+                    <th></th>
+                    <th>
+                        <p class="column-title">Niacinamide 2–5 %*</p>
+                    </th>
+                    <th>
+                        <p class="column-title">Niacinamide > 5 %</p>
+                    </th>
+                    <th>
+                        <p class="column-title">Amino Acids + Peptides<br>
+                            <span class="inner-text">EGF, Matrixyl
+                                Leuphasyl
+                                Argireline
+                                SYN-AKE</span>
+                        </p>
+                    </th>
+                    <th>
+                        <p class="column-title">Benzoyl Peroxide<br>
+                            <span class="inner-text">2,5–5 %</span>
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="row-title">Niacinamide 2–5 %*</p>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="row-title">Niacinamide > 5 %</p>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap error">
+                            <img src="./img/group1217.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="row-title">Amino Acids + Peptides<br>
+                            <span class="inner-text">EGF, Matrixyl
+                                Leuphasyl
+                                Argireline
+                                SYN-AKE</span>
+                        </p>
+            
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="row-title">Benzoyl Peroxide<br>
+                            <span class="inner-text">2,5–5 %</span>
+                        </p>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                    <td>
+                        <div class="status-icon-wrap normal">
+                            <img src="./img/cheked.png" alt="">
+                        </div>
+                        <span class="information">Наносить спустя 30 минут
+                            после любой косметики</span>
+                    </td>
+                </tr>
+            </table>
         </div>
     </section>
     <div class="backdrop is-hidden" data-modal>
@@ -358,7 +358,7 @@
                         </button>
                     </li>
                 </ul>
-                <button class="modal-close-button">
+                <button class="modal-close-button" data-modal-close type="button">
                     <img src="./img/close-button-img.png" alt="close button" width="15" height="15">
                 </button>
             </div>
@@ -380,10 +380,10 @@
             </div>
             <ul class="modal-products-groups-list">
                 <li class="modal-roducts-group">
-                    <button class="modal-products-list-button">
+                    <button class="modal-products-list-button" data-first-button>
                         <span class="modal-product-cathegory-name">Skincare/</span>
                     </button>
-                    <div class="modal-products-list-wrap">
+                    <div class="modal-products-list-wrap" data-first-group>
                         <ul class="modal-products-list">
                             <li>
                                 <button class="modal-products-list-button">
@@ -629,23 +629,757 @@
                     </div>
                 </li>
                 <li class="modal-roducts-group">
-                    <button class="modal-products-list-button">
+                    <button class="modal-products-list-button" data-second-button>
                         <span class="modal-product-cathegory-name">Body/</span>
                     </button>
+                    <div class="modal-products-list-wrap hide-list" data-second-group>
+                        <ul class="modal-products-list">
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid 2% + Provitamin B5. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 5% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Squalane + Bakuchiol 0,5%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name compare">Lactic Acid 10% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Niacinamide 10% + Zinc 1%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactobionic Acid 3% + Lactic Acid 5% + Avocado Oil...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 15% + Gluconolactone 3% + Lactic aci...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Honey 15% + Panthenol + Tocopherol</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Galactomyces Ferment Filtrate 7% + Green Tea Ext...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 10% + Betaine + Allantoin</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Retinoic acid 3%</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Blue Retinol 3%+Shea Butter 2%+Retinol 0,1%</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelamide 3% + Lactic acid 3% + Betaine 2%. Face...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Purifying face mask kaolin+curcuma extract+calen...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Face toner for dry skin Artemisia Annua extract</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Face cream for dry skin Artemisia Annua extract</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name compare">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactobionic Acid 3% + Lactic Acid 5% + Avocado Oil...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 15% + Gluconolactone 3% + Lactic aci...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Honey 15% + Panthenol + Tocopherol</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Galactomyces Ferment Filtrate 7% + Green Tea Ext...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 10% + Betaine + Allantoin</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 5% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Squalane + Bakuchiol 0,5%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 10% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Niacinamide 10% + Zinc 1%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="modal-roducts-group">
-                    <button class="modal-products-list-button">
+                    <button class="modal-products-list-button" data-third-button>
                         <span class="modal-product-cathegory-name">Hair/</span>
                     </button>
+                    <div class="modal-products-list-wrap hide-list" data-third-group>
+                        <ul class="modal-products-list">
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid 2% + Provitamin B5. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 5% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Squalane + Bakuchiol 0,5%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name compare">Lactic Acid 10% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Niacinamide 10% + Zinc 1%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactobionic Acid 3% + Lactic Acid 5% + Avocado Oil...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 15% + Gluconolactone 3% + Lactic aci...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Honey 15% + Panthenol + Tocopherol</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Galactomyces Ferment Filtrate 7% + Green Tea Ext...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 10% + Betaine + Allantoin</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Retinoic acid 3%</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Blue Retinol 3%+Shea Butter 2%+Retinol 0,1%</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelamide 3% + Lactic acid 3% + Betaine 2%. Face...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Purifying face mask kaolin+curcuma extract+calen...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Face toner for dry skin Artemisia Annua extract</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Face cream for dry skin Artemisia Annua extract</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name compare">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactobionic Acid 3% + Lactic Acid 5% + Avocado Oil...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 15% + Gluconolactone 3% + Lactic aci...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Honey 15% + Panthenol + Tocopherol</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Galactomyces Ferment Filtrate 7% + Green Tea Ext...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 10% + Betaine + Allantoin</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 5% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Squalane + Bakuchiol 0,5%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 10% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Niacinamide 10% + Zinc 1%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="modal-roducts-group">
-                    <button class="modal-products-list-button">
+                    <button class="modal-products-list-button" data-fourth-button>
                         <span class="modal-product-cathegory-name">Make-up/</span>
                     </button>
+                    <div class="modal-products-list-wrap hide-list" data-fourh-group>
+                        <ul class="modal-products-list">
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid 2% + Provitamin B5. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 5% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Squalane + Bakuchiol 0,5%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name compare">Lactic Acid 10% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Niacinamide 10% + Zinc 1%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactobionic Acid 3% + Lactic Acid 5% + Avocado Oil...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 15% + Gluconolactone 3% + Lactic aci...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Honey 15% + Panthenol + Tocopherol</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Galactomyces Ferment Filtrate 7% + Green Tea Ext...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 10% + Betaine + Allantoin</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Retinoic acid 3%</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Blue Retinol 3%+Shea Butter 2%+Retinol 0,1%</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelamide 3% + Lactic acid 3% + Betaine 2%. Face...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Purifying face mask kaolin+curcuma extract+calen...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Face toner for dry skin Artemisia Annua extract</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Face cream for dry skin Artemisia Annua extract</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name compare">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactobionic Acid 3% + Lactic Acid 5% + Avocado Oil...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 15% + Gluconolactone 3% + Lactic aci...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Honey 15% + Panthenol + Tocopherol</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Galactomyces Ferment Filtrate 7% + Green Tea Ext...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Glycolic Acid 10% + Betaine + Allantoin</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 5% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Squalane + Bakuchiol 0,5%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Lactic Acid 10% + 3D Hyaluronic Acid 2%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Niacinamide 10% + Zinc 1%. Face Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">3D Hyaluronic Acid + Caffeine + EGCG. Eye Serum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Hemisqualane 4% + Matrixyl 3% + Macadamia Oil 2%...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Actobionic Acid 3% + Mandelic Acid 5% + Hyaluronic...</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="modal-products-list-button">
+                                    <img src="./img/exsample-image.png" alt="image of product" width="83" height="83" class="exsample-image">
+                                    <span class="modal-poducts-list-name">Azelaic Acid Derivative. Face Cream</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/tabs.js"></script>
 </body>
 </html>
 

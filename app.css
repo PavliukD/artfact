@@ -10411,6 +10411,17 @@ a.loyalty-program__button:hover{
 .section-info-open-link:hover,
 .section-info-download-link:hover{
     cursor: pointer;
+    text-decoration: none;
+}
+
+.section-info-open-link:visited,
+.section-info-download-link:visited{
+    text-decoration: none;
+}
+
+.section-info-open-link:active,
+.section-info-download-link:active{
+    text-decoration: none;
 }
 
 .section-info-download-link_icon{
@@ -10424,6 +10435,7 @@ a.loyalty-program__button:hover{
     font-weight: 400;
     font-size: 12px;
     line-height: 11px;
+    color: #000000;
 }
 
 .section-compatibility-check{
@@ -11497,4 +11509,8 @@ a.loyalty-program__button:hover{
 
 .choosed-product-button:focus{
     outline: none;
+}
+
+.hide-list{
+    display: none;
 }
